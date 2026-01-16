@@ -1,0 +1,221 @@
+/* ========================================
+   MOBILE RESPONSIVE CSS - COMPLETE REWRITE
+   ======================================== */
+
+/* === MOBILE (max-width: 768px) === */
+@media (max-width: 768px) {
+
+
+    /* HERO */
+    .hero-sec {
+        padding: 20px 15px;
+        margin-top: 15px;
+    }
+
+    .hero-sec h1 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .hero-sec p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .hero-sec p br {
+        display: none;
+    }
+
+    /* SLIDER */
+    .slider {
+        margin: 0;
+    }
+
+    .buttons {
+        padding: 5px 10px;
+    }
+
+    .buttons ul {
+        gap: 5px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .buttons ul li {
+        padding: 8px 12px;
+        font-size: 11px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .slide-container {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        min-height: 300px;
+        height: auto;
+    }
+
+    .slider-inner-cont {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .slider-left h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .slider-left p:nth-child(2) {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .slider-right img {
+        max-height: 150px;
+        width: auto;
+    }
+
+    /* APP SHOWCASE */
+    .app-showcase {
+        padding: 30px 0;
+    }
+
+    .showcase-slide {
+        flex: 0 0 100%;
+    }
+
+    .phone-mockup {
+        width: 170px;
+    }
+
+    .callout {
+        width: 80px;
+        height: 80px;
+        font-size: 10px;
+    }
+
+    .nav-arrow {
+        font-size: 30px;
+    }
+
+    /* CHOOSE */
+    .choose {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .choose img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .choose-right h2 {
+        font-size: 20px;
+    }
+
+    .choose-right p {
+        font-size: 12px;
+    }
+
+    /* CARDS */
+    .cards-line {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 10px;
+    }
+
+    .cards-line div {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cards-line div img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .cards-line div h2 {
+        font-size: 20px;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .cards-line div div {
+        margin-left: 12px !important;
+    }
+
+    .cards-line div p {
+        font-size: 12px;
+        margin-bottom: 12px !important;
+        line-height: 18px !important;
+    }
+
+    /* BANNER */
+    .banner-2 {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .banner-2 h2 {
+        font-size: 20px;
+    }
+
+    .banner-2 p {
+        font-size: 12px;
+    }
+
+    .banner-2 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* === TABLET (768px - 1023px) === */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .nav-item ul {
+        gap: 10px;
+    }
+
+    .nav-item ul li a {
+        font-size: 13px;
+    }
+
+    .hero-sec h1 {
+        font-size: 22px;
+    }
+
+    .slider-left h2 {
+        font-size: 24px;
+    }
+
+    .cards-line {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .cards-line div {
+        width: 48%;
+    }
+}
+
+
+/* === LARGE DESKTOP (1440px+) === */
+@media (min-width: 1440px) {
+
+    .hero-sec,
+    .slider,
+    .choose,
+    .cards-line,
+    .banner-2 {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .showcase-container {
+        max-width: 1600px;
+    }
+}

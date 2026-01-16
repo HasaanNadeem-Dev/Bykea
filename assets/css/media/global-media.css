@@ -1,0 +1,141 @@
+/* Global Media Queries (Shared across all pages) */
+
+/* === MOBILE (max-width: 900px) === */
+@media (max-width: 900px) {
+
+    /* FOOTER RESPONSIVE */
+    #main-footer {
+        padding-top: 40px !important;
+        margin-top: 40px !important;
+    }
+
+    .footer-top {
+        gap: 20px;
+    }
+
+    .brand-column {
+        flex: 100% !important;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .footer-logo {
+        margin: 0 0 15px;
+    }
+
+    .tagline-box {
+        margin-bottom: 20px;
+    }
+
+    .contact-list li {
+        justify-content: flex-start;
+    }
+
+    .store-buttons {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer-top>.footer-column:nth-child(2) {
+        margin-left: 0 !important;
+    }
+
+    .footer-column {
+        text-align: left;
+        flex: 100% !important;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .bottom-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+}
+
+/* === MOBILE (max-width: 768px) === */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* NAVIGATION */
+    .hamburger {
+        display: block !important;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav .logo img {
+        width: 80px;
+        margin-left: 10px;
+    }
+
+    nav div button {
+        display: none;
+    }
+
+    .nav-item ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        padding: 70px 0 20px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        z-index: 999;
+        gap: 0 !important;
+    }
+
+    .nav-item ul.active {
+        left: 0;
+    }
+
+    .nav-item ul li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-item ul li a {
+        padding: 14px 20px;
+        display: block;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .nav-item ul .dropdown {
+        position: static;
+        display: none;
+        box-shadow: none;
+        border: none;
+        background: #f8f8f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    .has-dropdown.active .dropdown {
+        display: flex;
+    }
+
+    .nav-item ul .dropdown li a {
+        padding: 12px 20px 12px 40px;
+        font-size: 13px;
+        background: #f8f8f8;
+    }
+}

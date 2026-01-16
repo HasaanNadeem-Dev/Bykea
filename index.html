@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media/index.css">
+    <link rel="stylesheet" href="./assets/css/media/global-media.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/logo/favicon.png" type="image/x-icon">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Bykea</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo"><a href="index.html"><img width="100px" src="./assets/img/logo/Bykea_logo.svg"
+                    alt="Bykea Logo"></a></div>
+        <div class="nav-item">
+            <ul id="nav-menu">
+                <li class="has-dropdown">
+                    <a href="about.html">About <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Social Impact</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Mission, Vision & Values</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Safety</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="">Our Services <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="corporate-carpooling-solution.html">Corporate Carpooling</a></li>
+                        <li><a href="#">Ride</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Shops</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Bykea For Business</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Partners</a></li>
+                <li><a href="franchise.html">Franchises</a></li>
+                <li class="has-dropdown">
+                    <a href="">Help Center <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Careers </a></li>
+            </ul>
+        </div>
+        <div><a href="contact.html"><button>Contact Bykea</button></a></div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-sec">
+        <h1>Bykea is your everyday, everything platform</h1>
+        <p>From helping you reach anywhere in the city at the lowest rates in town to getting anything delivered to
+            anyone <br> anywhere in the city. Bykea can do it all and more.</p>
+    </section>
+
+    <!-- Slider -->
+    <section class="slider">
+        <div class="buttons">
+            <ul id="slider-tabs">
+                <li class="active" data-tab="ride">Ride</li>
+                <li data-tab="delivery">Delivery</li>
+                <li data-tab="shops">Shops</li>
+            </ul>
+        </div>
+
+        <div class="slide-container">
+
+            <div class="slider-inner-cont" id="slider-inner-content">
+                <div class="slider-left">
+                    <h2 id="slider-title">Ride</h2>
+                    <p id="slider-description">Bykea offers rides on motorbikes, rickshaws, and cars at the lowest fares
+                        in Karachi, Lahore and Islamabad. No matter what your destination is, a Bykea is always there
+                        for you. Let’s get moving.</p>
+                    <p><a href="">Read More <i class="fa-solid fa-arrow-right-long"></i></a></p>
+                </div>
+                <div class="slider-right">
+                    <img id="slider-image" src="./assets/img/index/slider/1.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2 slider -->
+    <section class="flywheel-section">
+        <div class="flywheel-wrapper">
+            <div class="flywheel-content-area">
+                <button class="fly-nav prev" id="flywheel-prev"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="flywheel-window">
+                    <div class="flywheel-track" id="flywheel-track">
+                        <!-- Slide 1: The Main Diagram -->
+                        <div class="flywheel-slide">
+                            <img src="./assets/img/index/slider/banner-1.jpg" alt="Bykea Flywheel Diagram">
+                        </div>
+                        <!-- Slide 2: Placeholder for growth/ecosystem -->
+                        <div class="flywheel-slide">
+                            <img src="./assets/img/index/slider/Fold_01_skywheel-1.png" alt="Bykea Ecosystem">
+                        </div>
+                    </div>
+                </div>
+                <button class="fly-nav next" id="flywheel-next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="flywheel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- why choose bykea -->
+    <section class="choose">
+        <div class="choose-left"><img width="550px" src="assets/img/index/main/1.png" alt=""></div>
+        <div class="choose-right">
+            <p>Why Choose Bykea?</p>
+            <h2>We prioritize your safety</h2>
+            <p>All of our partners are tracked and undergo a thorough background check to guarantee your safety.</p>
+            <h2>Maintain high quality standards</h2>
+            <p>Your ratings and feedback help us ensure that you get the best experience with Bykea every time.</p>
+            <h2>Provide transparent pricing</h2>
+            <p>Our charges have no hidden-costs, we ensure to list down all charges per service used.</p>
+            <div class="google-store">
+                <img width="120px" src="assets/img/index/google store/app-apple.png" alt="">
+                <img width="136px" src="assets/img/index/google store/app-google.png" alt="">
+                <img width="140px" src="assets/img/index/google store/app-huawei.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <img id="banner-img" width="100%" src="assets/img/index/main/map-pakistan-compressed.jpg" alt="">
+
+    <!-- Cards -->
+    <sections class="cards-line">
+        <div style="box-shadow: 1px 1px 17px 5px rgba(0,0,0,0.08)">
+            <img width="480px" src="assets/img/index/cards/Updated-1.jpg" alt="">
+            <div>
+                <h2>Safety</h2>
+                <p>All of our partners hold a valid driver’s license, are tracked and undergo <br> a thorough background
+                    check to guarantee your safety. Your trip is <br> insured as a passenger and as a shipper.</p>
+                <p><a href="">Read More <i class="fa-solid fa-arrow-right-long"></i></a></p>
+            </div>
+        </div>
+        <div style="box-shadow: 1px 1px 17px 5px rgba(0,0,0,0.08)">
+            <img width="480px" src="assets/img/index/cards/Updated-2.jpg" alt="">
+            <div>
+                <h2>Accessibility</h2>
+                <p>We believe in providing accessible means of using the Bykea services. <br> With no need for
+                    smartphones or credit cards, the Bykea app limits no- <br>one.</p>
+                <p><a href="">Read More <i class="fa-solid fa-arrow-right-long"></i></a></p>
+            </div>
+        </div>
+    </sections>
+
+    <!-- Bbanner 2 -->
+    <section class="banner-2">
+        <h2>About Bykea</h2>
+        <img width="100%" src="assets/img/index/main/aboutus1-1.jpg" alt="">
+        <p>We are on a journey to build affordable technology solutions that will create income-generating opportunities
+            for tens of thousands in Pakistan, while addressing rampant challenges in the transportation, logistics and
+            payments sectors of the country.</p>
+        <button>Learn about Bykea</button>
+    </section>
+
+    <!-- cards sec 1 -->
+    <sections class="cards-line">
+        <div style="box-shadow: 1px 1px 17px 5px rgba(0,0,0,0.08)">
+            <img width="480px" height="320px" src="assets/img/index/cards/managementpic.jpg" alt="">
+            <div>
+                <h2>Careers at Bykea</h2>
+                <p>We are always looking to grow our team. Discover the right role for you.</p>
+                <p><a href="">View Opportunities <i class="fa-solid fa-arrow-right-long"></i></a></p>
+            </div>
+        </div>
+        <div style="box-shadow: 1px 1px 17px 5px rgba(0,0,0,0.08)">
+            <img width="480px" height="320px" src="assets/img/index/cards/Partners-updated.jpg" alt="">
+            <div>
+                <h2>Partner with Bykea</h2>
+                <p>As a Bykea Partner, you are fully in control of your future.</p>
+                <p><a href="">Read More <i class="fa-solid fa-arrow-right-long"></i></a></p>
+            </div>
+        </div>
+    </sections>
+
+    <!-- footer -->
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-wrapper">
+            <!-- Top Section -->
+            <div class="footer-top">
+                <!-- Column 1: Brand & Contact -->
+                <div class="footer-column brand-column">
+                    <img src="./assets/img/logo/Bykea_logo.svg" alt="Bykea" class="footer-logo">
+                    <div class="tagline-box">Moving Pakistan Forward</div>
+
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i> <span>021 38654444</span></li>
+                        <li><i class="fa-solid fa-envelope"></i> <span>info@bykea.com</span></li>
+                    </ul>
+
+                    <div class="store-buttons">
+                        <img src="assets/img/index/google store/app-apple.png" alt="Download on the App Store">
+                        <img src="assets/img/index/google store/app-google.png" alt="Get it on Google Play">
+                        <img src="assets/img/index/google store/app-huawei.png" alt="Explore it on AppGallery">
+                    </div>
+                </div>
+
+                <!-- Column 2: About -->
+                <div class="footer-column links-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Mission, Vision & Values</a></li>
+                        <li><a href="#">Social Impact</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="franchise.html">Franchise</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Products -->
+                <div class="footer-column links-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Ride</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Shops</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Bykea For Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Partner & Help -->
+                <div class="footer-column links-column">
+                    <h3>Bykea Partner</h3>
+                    <ul>
+                        <li><a href="#">About Partner</a></li>
+
+
+                        <li class="spacing-top">Help Center</li>
+
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="copyright-text">
+                    All Rights Reserved Bykea Pakistan
+                </div>
+
+                <div class="bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Safety</a>
+                    <a href="#">Terms</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+/* Contact Page Styling */
+
+:root {
+    --primary-green: #00aa2f;
+    --navy-blue: #242948;
+    --light-gray: #f4f4f4;
+    --white: #ffffff;
+    --text-color: #4a4a4a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar adjustments if needed */
+nav {
+    border-bottom: 1px solid #eee;
+}
+
+/* Hero Section */
+.contact-hero {
+    padding: 40px 0 0;
+    text-align: center;
+    background-color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-hero .container {
+    position: relative;
+    max-width: 1400px;
+}
+
+.contact-hero h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 52px;
+    /* Matching reference size */
+    color: var(--navy-blue);
+    font-weight: 800;
+    z-index: 10;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.hero-banner {
+    width: 100%;
+    position: relative;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 500px;
+    /* Control vertical stretch */
+    object-fit: contain;
+}
+
+/* Content Section */
+.contact-content {
+    background-color: #f8f8f8;
+    /* Light gray from reference */
+}
+
+.get-in-touch {
+    margin-bottom: 50px;
+    padding-top: 60px;
+}
+
+.get-in-touch h2,
+.locations h2 {
+    font-size: 34px;
+    color: var(--navy-blue);
+    font-weight: 800;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+.get-in-touch p {
+    font-size: 17px;
+    color: #333;
+    font-weight: 400;
+}
+
+.locations h2 {
+    margin-bottom: 15px;
+}
+
+.location-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.location-item p {
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: #333;
+    font-weight: 400;
+}
+
+.location-item strong {
+    color: var(--navy-blue);
+    font-weight: 800;
+    /* Extra bold for office names */
+}

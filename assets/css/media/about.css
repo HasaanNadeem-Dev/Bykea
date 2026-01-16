@@ -1,0 +1,130 @@
+/* Responsive Styles for About Page */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-image img {
+        width: 600px;
+        transform: translateX(30px);
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .opp-content h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 600px;
+        transform: none;
+    }
+
+    .productivity-wrapper {
+        flex-direction: column;
+    }
+
+    .prod-image {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .prod-content {
+        padding: 40px 30px;
+    }
+
+    .prod-info p {
+        max-width: 100%;
+    }
+
+    .feature-icons {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .reasons-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .intro-summary {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .prod-info h3 {
+        font-size: 24px;
+    }
+
+    .opp-content h2 {
+        font-size: 30px;
+    }
+
+    .opp-bg {
+        height: 350px;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .intro-summary h2 {
+        font-size: 22px;
+    }
+
+    .reason-card {
+        padding: 30px;
+    }
+
+    .feature-icons {
+        flex-wrap: wrap;
+    }
+
+    .icon-item {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,927 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* NavBar */
+nav {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+nav div img {
+    margin-left: 20px;
+}
+
+.nav-item {
+    margin-left: auto;
+}
+
+.nav-item ul {
+    display: flex;
+    gap: 21px;
+
+    margin-right: 25px;
+}
+
+.nav-item ul li {
+    list-style: none;
+}
+
+.nav-item ul li a i {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.nav-item ul li a {
+    text-decoration: none;
+    color: #00aa2f;
+    font-size: 14px;
+    padding: 10px 0;
+    /* Expanded touch target/hover area */
+    display: block;
+}
+
+/* Dropdown Styles */
+.nav-item ul li {
+    list-style: none;
+    position: relative;
+    /* Relative for absolute dropdown */
+}
+
+.nav-item ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    padding: 10px 0;
+    /* Removed left padding so hover background spans full width */
+    border-radius: 8px;
+    z-index: 1000;
+    margin-top: 0;
+    /* Removed 5px gap to fix hover issue */
+    flex-direction: column;
+    gap: 0 !important;
+    border: 1px solid #eee;
+}
+
+.dropdown li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item ul .dropdown li a {
+    color: #333;
+    padding: 10px 20px 10px 30px;
+    /* Indentation */
+    font-size: 13px;
+    display: block;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+.dropdown li a:hover {
+    background-color: #f5f5f5;
+    color: #00aa2f;
+}
+
+/* Show dropdown on hover */
+.has-dropdown:hover .dropdown {
+    display: flex;
+}
+
+nav div button {
+    padding: 5px 17px;
+    border: none;
+    background-color: #00aa2f;
+    color: white;
+    border-radius: 6px;
+    margin-right: 20px;
+    border: 1.2px solid #00aa2f;
+}
+
+nav div button:hover {
+    background-color: white;
+    border: 1.2px solid #00aa2f;
+    color: #00aa2f;
+    cursor: pointer;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #00aa2f;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+/* Hero Section */
+.hero-sec {
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.hero-sec h1 {
+    font-size: 25px;
+    color: #00aa2f;
+}
+
+.hero-sec p {
+    margin-top: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+/* Slider */
+.slider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    padding-left: 20px;
+    padding: 6px 15px;
+    z-index: 10px;
+}
+
+.buttons ul {
+    display: flex;
+}
+
+.buttons ul li {
+    list-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 15px 15px 0 0;
+    font-weight: 500;
+}
+
+.buttons ul li.active {
+    background-color: white;
+    color: #00aa2f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.slide-container {
+    margin-top: -12px;
+    margin-left: 15px;
+    height: 325px;
+    background-color: white;
+    width: 97%;
+    border-radius: 10px;
+    z-index: 1px;
+    overflow: hidden;
+}
+
+.slider-inner-cont {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+}
+
+.slider-left {
+    padding-left: 20px;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.slider-left h2 {
+    color: #00aa2f;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.slider-left p:nth-child(2) {
+    color: black;
+    font-size: 12.4px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.slider-left p a {
+    font-size: 14px;
+    color: #00aa2f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.slider-left p i {
+    font-size: 13px;
+}
+
+.slider-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.slider-right img {
+    max-width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+}
+
+/* App Showcase Slider */
+.app-showcase {
+    background-color: #00aa2f;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.showcase-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 50px;
+}
+
+.showcase-slider {
+    flex: 1;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.showcase-track {
+    display: flex;
+}
+
+.showcase-slide {
+    flex: 0 0 calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.phone-mockup {
+    width: 220px;
+    position: relative;
+    transform: rotate(-8deg);
+    /* Perfect angle as per design nudge */
+    transition: transform 0.3s ease;
+}
+
+.phone-mockup:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.phone-mockup img {
+    width: 100%;
+    border-radius: 35px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    background: white;
+    display: block;
+}
+
+.nav-arrow {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-weight: 100;
+    font-family: serif;
+    /* For thin arrow aesthetic */
+    padding: 0 20px;
+}
+
+.nav-arrow:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.callout {
+    position: absolute;
+    background-color: #f7e02b;
+    color: #00aa2f;
+    font-weight: 900;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    font-size: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+
+/* Precise Callout Positioning to match the 6 features in the design */
+/* Select your ride */
+.showcase-slide:nth-child(6n+1) .callout {
+    top: 25%;
+    left: -60px;
+}
+
+/* Offer the fare */
+.showcase-slide:nth-child(6n+2) .callout {
+    bottom: -25px;
+    left: -10px;
+}
+
+/* Choose driver & go! */
+.showcase-slide:nth-child(6n+3) .callout {
+    top: 15%;
+    right: -50px;
+}
+
+/* Send instantly */
+.showcase-slide:nth-child(6n+4) .callout {
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Hourly booking */
+.showcase-slide:nth-child(6n+5) .callout {
+    bottom: -35px;
+    right: -10px;
+}
+
+/* Shop anything */
+.showcase-slide:nth-child(6n+6) .callout {
+    top: 50%;
+    right: -65px;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+.slider-left {
+    flex: 1;
+}
+
+.slider-right {
+    flex: 1;
+}
+
+/* Flywheel Slider Section (100% Design Match) */
+/* Flywheel Slider Section (100% Design Match) */
+.flywheel-section {
+    /* Minimal padding */
+    background-color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 0;
+    /* Removed top margin */
+}
+
+.flywheel-wrapper {
+    max-width: 100%;
+    /* Full width */
+    margin: 0 auto;
+    padding: 0;
+    /* No padding */
+    position: relative;
+}
+
+.flywheel-content-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+}
+
+.flywheel-window {
+    width: 100%;
+    max-width: 100%;
+    /* Full width */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.flywheel-track {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.flywheel-slide {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    animation: fadeIn 0.5s ease;
+}
+
+.flywheel-slide.active {
+    display: flex;
+}
+
+.flywheel-slide img {
+    width: 100%;
+    /* Force full width */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Cover usually fills space better, but cover might crop. User said "bara karo". Let's use width 100% */
+    filter: none !important;
+}
+
+/* Custom Navigation Arrows matching design */
+/* Custom Navigation Arrows matching design */
+.fly-nav {
+    background: transparent;
+    /* Transparent background */
+    border: none;
+    color: #00aa2f;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    /* Removed border-radius and box-shadow */
+}
+
+.fly-nav.prev {
+    left: 20px;
+}
+
+.fly-nav.next {
+    right: 20px;
+}
+
+.fly-nav i {
+    font-weight: 900;
+    stroke-width: 2px;
+}
+
+.fly-nav:hover {
+    transform: translateY(-50%) scale(1.1);
+    background: transparent;
+    /* No background change on hover */
+}
+
+.fly-nav i {
+    font-weight: 900;
+    stroke-width: 2px;
+}
+
+.fly-nav:hover {
+    transform: scale(1.2);
+}
+
+/* Pagination Dots */
+.flywheel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    /* Overlay on image */
+    bottom: 30px;
+    /* Distance from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    /* Ensure visibility on top of image */
+    width: 100%;
+    /* Ensure full width for centering context if needed, though absolute centering handles it */
+    margin-top: 0;
+    /* Remove spacing */
+}
+
+.dot {
+    width: 8px;
+    /* Slightly larger dots */
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    width: 24px;
+    background-color: #00aa2f;
+    border-radius: 12px;
+}
+
+.choose {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.choose-right p:nth-child(1) {
+    color: #81848d;
+    font-size: 18px;
+    margin-top: 210px;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.choose-right h2:nth-child(2) {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.choose-right p:nth-child(3) {
+    color: #81848d;
+    font-size: 14px;
+    margin-bottom: 31px;
+}
+
+.choose-right h2:nth-child(4) {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.choose-right p:nth-child(5) {
+    color: #81848d;
+    font-size: 14px;
+    margin-bottom: 31px;
+}
+
+.choose-right h2:nth-child(6) {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.choose-right p:nth-child(7) {
+    color: #81848d;
+    font-size: 14px;
+    margin-bottom: 31px;
+}
+
+.google-store img:hover {
+    transition: transform .4s;
+    transform: scale(0.90);
+    cursor: pointer;
+}
+
+#banner-img {
+    margin-top: 50px;
+}
+
+.cards-line {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+.cards-line div img {
+    border-radius: 20px 20px 0 0;
+}
+
+.cards-line div {
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.cards-line div h2 {
+    margin-top: 10px;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.cards-line div div {
+    margin-left: 20px;
+}
+
+.cards-line div p a {
+    text-decoration: none;
+    color: #00aa2f;
+    font-weight: 500;
+}
+
+.cards-line div p {
+    color: black;
+    font-size: 12.5px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.banner-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+.banner-2 h2 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+}
+
+.banner-2 img {
+    border-radius: 20px;
+}
+
+.banner-2 p {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.banner-2 button {
+    margin-left: 10px;
+    margin-top: 15px;
+    padding: 7px 9px;
+    border-radius: 6px;
+    background-color: #242948;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+/* =========================================
+   Footer (Recreated for 100% Accuracy)
+   ========================================= */
+#main-footer {
+    background-color: #242948;
+    /* Exact dark navy blue */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 45px;
+    margin-top: 50px;
+    /* Reduced from 65px to compact */
+    padding-bottom: 15px;
+    /* Reduced from 25px */
+    width: 100%;
+}
+
+.footer-wrapper {
+    max-width: 1140px;
+    /* Standard container width */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Top Section --- */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 15px;
+    /* Reduced from 20px */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    /* Subtle divider */
+}
+
+
+/* Columns */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    /* Reduced from 30px */
+}
+
+/* Brands Column */
+.brand-column {
+    flex: 2.2;
+    /* Increased flex to accommodate buttons in one line */
+    padding-right: 0;
+    /* Removed strict padding to allow width expansion */
+    max-width: none;
+    /* Removed max-width restriction */
+}
+
+/* Brand Elements */
+.footer-logo {
+    width: 130px;
+    /* Slightly reduced */
+    margin-bottom: 15px;
+    /* Reduced from 18px */
+    filter: brightness(0) invert(1);
+    display: block;
+}
+
+.tagline-box {
+    display: inline-block;
+    background-color: #005ad2;
+    /* Vibrant blue background */
+    color: #ffffff;
+    font-size: 13px;
+    /* Reduced from 15px */
+    font-weight: 400;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+    /* Reduced from 28px */
+    letter-spacing: 0.3px;
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    /* Reduced from 30px */
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Reduced from 14px */
+    color: #ffffff;
+    font-size: 14px;
+    /* Reduced from 15px */
+}
+
+.contact-list li i {
+    width: 25px;
+    font-size: 15px;
+    /* Reduced from 16px */
+    color: #ffffff;
+}
+
+/* Store Buttons */
+.store-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    /* Forces items to stay in one line */
+    align-items: center;
+}
+
+.store-buttons img {
+    height: 34px;
+    /* Reduced from 38px */
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.store-buttons img:hover {
+    transform: translateY(-2px);
+}
+
+/* Target the About Section specifically (2nd child in footer-top) */
+.footer-top>.footer-column:nth-child(2) {
+    margin-left: 30px;
+    /* User requested margin */
+}
+
+/* Links Columns */
+.links-column h3 {
+    color: #ffffff;
+    font-size: 15px;
+    /* Reduced from 17px */
+    font-weight: 700;
+    margin-bottom: 12px;
+    /* Reduced from 15px */
+    letter-spacing: 0.2px;
+}
+
+.links-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-column ul li {
+    margin-bottom: 6px;
+    /* Reduced from 8px */
+}
+
+.links-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    /* Reduced from 15px */
+    font-weight: 400;
+    /* Regular weight */
+    transition: opacity 0.2s;
+}
+
+.links-column ul li a:hover {
+    opacity: 0.8;
+}
+
+.spacing-top {
+    margin-top: 5px;
+    /* Significantly reduced to treat Help Center closer to a list item */
+}
+
+/* --- Bottom Section --- */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    /* Reduced from 25px */
+    flex-wrap: wrap;
+    gap: 15px;
+    /* Reduced gap */
+}
+
+.copyright-text {
+    font-size: 12px;
+    /* Reduced from 14px */
+    color: #ffffff;
+}
+
+.bottom-links {
+    display: flex;
+    gap: 25px;
+}
+
+.bottom-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    /* Reduced from 14px */
+    font-weight: 500;
+}
+
+.bottom-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 17px;
+    /* Reduced from 18px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Responsiveness */

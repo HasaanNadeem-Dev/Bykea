@@ -1,0 +1,227 @@
+/* Corporate Carpooling Page Styling */
+
+:root {
+    --primary-green: #00aa2f;
+    --navy-blue: #242948;
+    --light-gray: #f4f4f4;
+    --white: #ffffff;
+}
+
+.carpool-hero {
+    background-color: var(--primary-green);
+    color: var(--white);
+    /* Even slimmer banner */
+    overflow: hidden;
+    position: relative;
+}
+
+.carpool-hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    /* Slightly smaller for slim banner */
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 450px;
+    /* Further reduced from 500px */
+    height: auto;
+    border-radius: 0 0 0 50%;
+    /* Adjusted for cut-out feel if needed */
+}
+
+/* Steps Section */
+.steps-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.steps-container {
+    max-width: 1100px;
+    margin: -0px auto 0;
+    /* Overlap effect */
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px 60px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.steps-content {
+    flex: 1;
+}
+
+.steps-ol {
+    padding-left: 20px;
+    color: var(--navy-blue);
+}
+
+.steps-ol>li {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.steps-ol ul {
+    list-style-type: circle;
+    /* Hollow circle bullets */
+    padding-left: 25px;
+    margin-top: 5px;
+}
+
+.steps-ol ul li {
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.steps-ol a,
+.steps-ol span {
+    font-weight: 600;
+}
+
+.steps-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps-image img {
+    max-width: 550px;
+    /* Adjusted for laptop view */
+    height: auto;
+}
+
+/* Benefits Grid */
+.benefits-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 32px;
+    color: var(--navy-blue);
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.benefits-grid {
+    max-width: 850px;
+    /* Even slimmer layout for more compact cards */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    /* Slightly tighter gap */
+    padding: 0 20px;
+}
+
+.benefit-card {
+    background: var(--white);
+    padding: 30px;
+    /* Increased vertical padding */
+    border-radius: 12px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    /* Softer, larger shadow */
+    transition: transform 0.3s ease;
+    border: 1px solid #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    width: 60px;
+    /* Matching reference size */
+    height: 60px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.benefit-card h3 {
+    font-size: 20px;
+    color: var(--navy-blue);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* CTA Section */
+.carpool-cta {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.carpool-cta h2 {
+    font-size: 36px;
+    color: var(--navy-blue);
+    font-weight: 800;
+}
+
+.carpool-cta a {
+    color: var(--navy-blue);
+    text-decoration: underline;
+}
+
+.store-badges {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.store-badges img {
+    height: 40px;
+}

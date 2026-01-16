@@ -1,0 +1,351 @@
+/* About Page Styles */
+
+:root {
+    --primary-green: #00aa2f;
+    --navy-blue: #242948;
+    --text-gray: #81848d;
+    --light-bg: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Sub-heading style */
+.sub-heading {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-gray);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* About Hero Section */
+.about-hero {
+    background-color: var(--primary-green);
+    padding: 10px 0 0 0;
+    /* Minimal top padding */
+    color: white;
+    overflow: hidden;
+    min-height: 300px;
+    /* More compact height */
+    display: flex;
+    align-items: center;
+}
+
+.about-hero .container {
+    display: flex;
+    align-items: center;
+    /* Center the container items by default */
+    justify-content: space-between;
+    width: 100%;
+    min-height: 300px;
+    /* Ensure container has height */
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center text vertically */
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+
+.hero-content h1 {
+    font-size: 35px;
+    /* Reduced to match reference proportion */
+    line-height: 1.1;
+    margin-bottom: 15px;
+    font-weight: 700;
+    max-width: none;
+}
+
+.hero-content p {
+    font-size: 14px;
+    /* Reduced size */
+    line-height: 1.5;
+    opacity: 1;
+    max-width: none;
+    font-weight: 400;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    /* Force stick to bottom of container */
+    margin-bottom: 0;
+}
+
+.hero-image img {
+    max-width: 120%;
+    /* Balance size */
+    width: 750px;
+    height: auto;
+    object-fit: contain;
+    transform: translateX(40px);
+    /* Subtle overlap into gutter */
+    display: block;
+    margin-top: auto;
+    /* Push to bottom */
+    margin-bottom: -5px;
+    /* Stick it to the very bottom */
+}
+
+/* Intro Summary */
+.intro-summary {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.intro-summary h2 {
+    font-size: 32px;
+    color: var(--navy-blue);
+    margin-bottom: 25px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3;
+}
+
+.intro-summary p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Productivity Section */
+.productivity-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 32px;
+    color: var(--navy-blue);
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.productivity-wrapper {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.prod-image {
+    flex: 1.1;
+    min-height: 400px;
+}
+
+.prod-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.prod-content {
+    flex: 1;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.prod-info h3 {
+    font-size: 28px;
+    color: var(--navy-blue);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.prod-info p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 15.5px;
+    max-width: 90%;
+}
+
+.feature-icons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.icon-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.icon-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.icon-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Reasons Section */
+.reasons-section {
+    padding: 80px 0;
+}
+
+.reasons-section h2 {
+    font-size: 36px;
+    color: var(--navy-blue);
+    margin-bottom: 40px;
+}
+
+.reasons-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.reason-card {
+    flex: 1;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    /* Center everything */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.reason-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px auto;
+    /* Reduced margin and size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reason-icon img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+.reason-card h3 {
+    font-size: 22px;
+    color: var(--navy-blue);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.reason-card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 14px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* Opportunities Section */
+.opportunities-section {
+    position: relative;
+    z-index: 20;
+    margin-bottom: 20px;
+}
+
+.opp-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/about/banner/about-opportunity.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    z-index: 20;
+    margin-bottom: -250px;
+    overflow: hidden;
+}
+
+.opp-content h2 {
+    font-size: 52px;
+    /* Even larger */
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.opp-content p {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    opacity: 1;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #242948;
+    /* Dark button like in image */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #2a315a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer overrides for About Page */
+#main-footer {
+    margin-top: 0 !important;
+    background-color: #242948 !important;
+    padding-top: 300px !important;
+    /* Large padding to accommodate overlapping banner */
+    border-top: none !important;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
